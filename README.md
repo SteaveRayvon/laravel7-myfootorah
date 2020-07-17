@@ -1,8 +1,28 @@
 # laravel7-myfootorah
 
-## Usage
+# Laravel 7 Package for Myfatoorah Payment Gateway REST API
 
+Myfatoorah Payment Gateway for Laravel 7*
+
+
+## Installation 
 Upload this Directory to app/Providers
+
+Now open up `/config/app.php` and add the service provider to your `providers` array.
+```php
+'providers' => [
+	app\MyFatoorah\MyFatoorahServiceProfider::class,
+]
+```
+
+Now add the alias.
+```php
+'aliases' => [
+	'MyFatoorah' => app\MyFatoorah\Facade\MyFatoorah::class,
+]
+```
+
+## Usage
 
 ``` php
 public function payment(Request $request){
@@ -32,8 +52,9 @@ public function payment(Request $request){
         }
 
     }
-    ```
-    ``` php
+```
+
+``` php
      public function checkpayment( Request $request )
     {
         if($request->get("paymentId")){
@@ -54,7 +75,8 @@ public function payment(Request $request){
        $invoice->isUnpaid(); // check if invoice is unpaid
        $invoice->isFailed(); // check if invoice is failed
     }
-        ```
-    ## License
+```
+
+## License
 
 The MIT License (MIT). Please see [License File](https://github.com/dnoegel/php-xdg-base-dir/blob/master/LICENSE) for more information.
