@@ -22,6 +22,13 @@ Now add the alias.
 ]
 ```
 
+Now add this to .env
+```php
+MYFATOORAH_MODE=test
+MYFATOORAH_USERNAME=apiaccount@myfatoorah.com
+MYFATOORAH_PASSWORD=api12345*
+```
+
 ## Usage
 
 ``` php
