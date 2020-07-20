@@ -11,14 +11,14 @@ Upload this Directory to app/Providers
 Now open up `/config/app.php` and add the service provider to your `providers` array.
 ```php
 'providers' => [
-	app\MyFatoorah\MyFatoorahServiceProfider::class,
+	App\Providers\MyFatoorah\MyFatoorahServiceProfider::class,
 ]
 ```
 
 Now add the alias.
 ```php
 'aliases' => [
-	'MyFatoorah' => app\MyFatoorah\Facade\MyFatoorah::class,
+	'MyFatoorah' => App\Providers\MyFatoorah\Facade\MyFatoorah::class,
 ]
 ```
 
