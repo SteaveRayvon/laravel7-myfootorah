@@ -7,7 +7,7 @@ use App\Providers\MyFatoorah\Services\Auth;
 use App\Providers\MyFatoorah\Services\CreateApiInvoiceIso;
 use App\Providers\MyFatoorah\Services\FindApiInvoice;
 
-class Myfatoorah
+class MyFatoorah
 {
 
 	public static function requestAccessToken()
